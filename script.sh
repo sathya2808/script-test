@@ -4,7 +4,7 @@ c=0
 for i in $a; do
  echo $i
  git add $i
- c = $((c+1))
+ c=$((c+1))
  if [[($c > 1)]];then
   git commit -m "$i"
   git branch -M main
